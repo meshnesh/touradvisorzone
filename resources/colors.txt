@@ -1,0 +1,3 @@
+Primary color: #00BEAF
+Primary Dark color: #00988C
+Accent color: #BEAF00
