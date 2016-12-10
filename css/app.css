@@ -1,0 +1,117 @@
+/****************************GENERAL************************************/
+
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+body{
+    background: #f9f2f4;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    padding-top: 80px;
+}
+/*.nav-center,*/
+/*.center{*/
+    /*width: 80%;*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    /*max-width: 1200px;*/
+/*}*/
+
+/*a{*/
+    /*color: #191919;*/
+    /*text-decoration: none;*/
+/*}*/
+/*ul{*/
+    /*list-style: none;*/
+/*}*/
+
+/****************************NAV BAR************************************/
+
+
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    min-height: 50px;
+    height: 70px;
+    background: #fff;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    padding: 24px 10px;
+}
+
+nav li a {
+    color: #757575;
+    text-transform: uppercase;
+}
+
+
+.toggle-nav{
+    display: none;
+}
+
+.nav-mobile style{
+    display: block;
+}
+/*********NAV BAR END**********/
+
+/****************************MEDIA QUERIES************************************/
+
+@media only screen and (max-width: 768px) {
+    .nav li {
+        font-size: 14px;
+        float: left;
+        padding-left: 0%;
+        margin-left: 7%;
+    }
+}
+
+
+@media only screen and (max-width: 640px){
+    .toggle-nav{
+        display: block;
+        padding: 10px;
+        position: absolute;
+        right: 10px;
+        line-height: 30px;
+    }
+    .toggle-nav:after{
+        content: ' Menu';
+    }
+
+    .nav-mobile{
+        display: none;
+    }
+
+    .style-mobile{
+        background: #ffffff;
+        top : 51px;
+        position : absolute;
+        width : 100%;
+    }
+
+    .style-mobile li{
+        display: block;
+        width: 100%;
+    }
+
+    .nav{
+        display: block;
+        float: none;
+        margin: 0em;
+    }
+}
+
+@media only screen and (min-width: 641px){
+    .nav-mobile {
+        display:block !important;
+    }
+}
+/*********MEDIA QUERY END**********/
