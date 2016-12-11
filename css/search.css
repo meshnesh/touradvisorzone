@@ -1,17 +1,10 @@
-body {
-  background: #e03a29;
-}
-
-body *, html * {
-  box-sizing: border-box;
-}
-
+/*
 .container {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%);
-}
+}*/
 
 .search-box input[type="text"] {
   border: none;
