@@ -10,7 +10,7 @@ body{
     background: #f9f2f4;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    padding-top: 80px;
+    /*padding-top: 80px;*/
 }
 /*.nav-center,*/
 /*.center{*/
@@ -38,7 +38,7 @@ nav {
     top: 0;
     min-height: 50px;
     height: 70px;
-    background: #fff;
+    background: transparent;
     text-align: center;
 }
 
@@ -48,8 +48,10 @@ nav li {
 }
 
 nav li a {
-    color: #757575;
+    /*color: #757575;*/
+    color: #fff;
     text-transform: uppercase;
+    font-weight: 400;
 }
 
 
@@ -59,8 +61,57 @@ nav li a {
 
 .nav-mobile style{
     display: block;
+
+}
+.left{
+    float: left;
+        padding-top: 10%;
+}
+.right{
+    float: right;
+        padding-top: 10%;
+}
+.logo{
+
+}
+.nav-center{
+    padding-top: 2%;
 }
 /*********NAV BAR END**********/
+/*********Main**********/
+.main{
+    background-image: url(../img/webImages/maassai.jpg);
+    background-image: linear-gradient( rgba(0, 190, 175, 0.3), rgba(255, 153, 0, 0.2)), url(../img/webImages/maassai.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: 0% 80%;
+    /*position: fixed;*/
+}
+
+.quote{
+    margin-top: 10%;
+    text-align: center;
+    border: 2px solid #fff;
+    /*padding-right: 10%;*/
+    margin-left: 5%;
+    height: 80vh;
+    width: 90%;
+}
+.inspiration{
+    font-size: 4em;
+    padding-top: 12%;
+    color: #fff;
+    font-weight: 100;
+}
+.logo-img{
+        padding-top: 4%;
+}
+/*********Main BAR END**********/
+
+
+
+
 
 /****************************MEDIA QUERIES************************************/
 
