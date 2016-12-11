@@ -84,7 +84,7 @@ nav li a:hover{
 /*********Main**********/
 .main{
     background-image: url(../img/webImages/maassai.jpg);
-    background-image: linear-gradient( rgba(0, 190, 175, 0.3), rgba(255, 153, 0, 0.2)), url(../img/webImages/maassai.jpg);
+    background-image: linear-gradient( rgba(0, 190, 175, 0.5), rgba(0, 190, 175, 0.5)), url(../img/webImages/maassai.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -115,6 +115,7 @@ span:hover{
     text-decoration: line-through;
     transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
     font-weight: 100;
+}
 /*}
 span:before, span:after {
   content: '';
@@ -150,6 +151,13 @@ span:hover:after {
 
 
 /*********Main BAR END**********/
+/*********Attraction section**********/
+.slider{
+    /*height: 30vh;*/
+    /*background-color: #757575;*/
+    margin-top: 1%;
+}
+/*********Attraction END**********/
 
 
 
