@@ -1,0 +1,58 @@
+{
+    "marines": [{
+        "attraction_site_id": "30",
+        "site_name": "Kiunga Marine National Reserve",
+        "latitude": "-3.3660566",
+        "longitude": "39.9504275",
+        "location_name": "Lamu",
+        "site_image": "http:\/\/www.kws.go.ke\/sites\/default\/files\/styles\/park_node_style\/public\/Kiunga.jpg?itok=bDQsRM3G",
+        "interior_image": "http:\/\/www.kws.go.ke\/sites\/default\/files\/styles\/park_gallery_style\/public\/IMGP3567_0.jpg?itok=R0fzK1ZD",
+        "attractions_image": "",
+        "opening_hrs": "8AM_5PM",
+        "categories": "Marine Park"
+    }, {
+        "attraction_site_id": "31",
+        "site_name": "Watamu Marine National Park & Reserve",
+        "latitude": "-3.3660566",
+        "longitude": "39.9504275",
+        "location_name": "Watamu Malindi",
+        "site_image": "http:\/\/www.kws.go.ke\/sites\/default\/files\/styles\/park_node_style\/public\/Watamu.jpg?itok=yaRGETrj",
+        "interior_image": "http:\/\/www.kws.go.ke\/sites\/default\/files\/styles\/park_gallery_style\/public\/7.jpg?itok=gifLsC1z",
+        "attractions_image": "",
+        "opening_hrs": "8AM_5PM",
+        "categories": "Marine Park"
+    }, {
+        "attraction_site_id": "32",
+        "site_name": "Mombasa Marine National Park & Reserve",
+        "latitude": "-4.3645086",
+        "longitude": "39.5587205",
+        "location_name": "Lantana Galu Beach",
+        "site_image": "http:\/\/www.kws.go.ke\/sites\/default\/files\/styles\/park_node_style\/public\/Mombasa.jpg?itok=LB2G4x7d",
+        "interior_image": "http:\/\/www.kws.go.ke\/sites\/default\/files\/styles\/park_gallery_style\/public\/Fishers.jpg?itok=vUlvKvSw",
+        "attractions_image": "",
+        "opening_hrs": "8AM_5PM",
+        "categories": "Marine Park"
+    }, {
+        "attraction_site_id": "33",
+        "site_name": "Malindi Marine National Park & Reserve",
+        "latitude": "-3.2596385",
+        "longitude": "40.1337541",
+        "location_name": "Malindi",
+        "site_image": "http:\/\/www.kws.go.ke\/sites\/default\/files\/styles\/park_node_style\/public\/malindi.jpg?itok=1DzttNn5",
+        "interior_image": "http:\/\/www.kws.go.ke\/sites\/default\/files\/styles\/park_gallery_style\/public\/IMGP3963.jpg?itok=pE_dYRgp",
+        "attractions_image": "",
+        "opening_hrs": "8AM_5PM",
+        "categories": "Marine Park"
+    }, {
+        "attraction_site_id": "34",
+        "site_name": "Kisite Mpunguti Marine Park & Reserve",
+        "latitude": "-4.7138889",
+        "longitude": "39.3622222",
+        "location_name": "Kwale",
+        "site_image": "http:\/\/www.kws.go.ke\/sites\/default\/files\/styles\/park_node_style\/public\/Kisite.jpg?itok=TS4X2riM",
+        "interior_image": "http:\/\/www.kws.go.ke\/sites\/default\/files\/styles\/park_gallery_style\/public\/Indian%20Ocean%20Bottlenose%20Dolphin%20group%2C%20Shimoni%20GVI.JPG?itok=2ZJ3LfEe",
+        "attractions_image": "",
+        "opening_hrs": "8AM_5PM",
+        "categories": "Marine Park"
+    }]
+}
