@@ -1,0 +1,218 @@
+/****************************GENERAL************************************/
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300);
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+body{
+    background: #757575;
+    font-family: 'Roboto Condensed';
+    font-size: 16px;
+    /*padding-top: 80px;*/
+}
+/*.nav-center,*/
+/*.center{*/
+    /*width: 80%;*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    /*max-width: 1200px;*/
+/*}*/
+
+/*a{*/
+    /*color: #191919;*/
+    /*text-decoration: none;*/
+/*}*/
+/*ul{*/
+    /*list-style: none;*/
+/*}*/
+
+/****************************NAV BAR************************************/
+
+
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    min-height: 50px;
+    height: 70px;
+    background: transparent;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    padding: 24px 10px;
+}
+
+nav li a {
+    /*color: #757575;*/
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+nav li a:hover{
+    color: #757575;
+}
+
+
+.toggle-nav{
+    display: none;
+}
+
+.nav-mobile style{
+    display: block;
+
+}
+.left{
+    float: left;
+        padding-top: 10%;
+}
+.right{
+    float: right;
+        padding-top: 10%;
+}
+.logo{
+
+}
+.nav-center{
+    padding-top: 2%;
+}
+/*********NAV BAR END**********/
+/*********Main**********/
+.main{
+    background-image: url(../img/webImages/maassai.jpg);
+    background-image: linear-gradient( rgba(0, 190, 175, 0.5), rgba(0, 190, 175, 0.5)), url(../img/webImages/maassai.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: 0% 80%;
+    /*position: fixed;*/
+}
+
+.quote{
+    margin-top: 10%;
+    text-align: center;
+    border: 2px solid #fff;
+    /*padding-right: 10%;*/
+    margin-left: 5%;
+    height: 80vh;
+    width: 90%;
+}
+.inspiration{
+    font-size: 4em;
+    padding-top: 12%;
+    color: #fff;
+    font-weight: 100;
+}
+.logo-img{
+        padding-top: 4%;
+}
+
+span:hover{
+    text-decoration: line-through;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+    font-weight: 100;
+}
+/*}
+span:before, span:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  top: 50%;
+  margin-top: -0.5px;
+  background: #fff;
+}
+
+span:before {
+  left: -2.5px;
+}
+span:after {
+  right: 2.5px;
+  background: #fff;
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+span:hover:before {
+  background: #fff;
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+span:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
+}*/
+
+
+
+/*********Main BAR END**********/
+/*********Attraction section**********/
+.slider{
+    /*height: 30vh;*/
+    /*background-color: #757575;*/
+    margin-top: 1%;
+}
+/*********Attraction END**********/
+
+
+
+
+
+/****************************MEDIA QUERIES************************************/
+
+@media only screen and (max-width: 768px) {
+    .nav li {
+        font-size: 14px;
+        float: left;
+        padding-left: 0%;
+        margin-left: 7%;
+    }
+}
+
+
+@media only screen and (max-width: 640px){
+    .toggle-nav{
+        display: block;
+        padding: 10px;
+        position: absolute;
+        right: 10px;
+        line-height: 30px;
+    }
+    .toggle-nav:after{
+        content: ' Menu';
+    }
+
+    .nav-mobile{
+        display: none;
+    }
+
+    .style-mobile{
+        background: #ffffff;
+        top : 51px;
+        position : absolute;
+        width : 100%;
+    }
+
+    .style-mobile li{
+        display: block;
+        width: 100%;
+    }
+
+    .nav{
+        display: block;
+        float: none;
+        margin: 0em;
+    }
+}
+
+@media only screen and (min-width: 641px){
+    .nav-mobile {
+        display:block !important;
+    }
+}
+/*********MEDIA QUERY END**********/
