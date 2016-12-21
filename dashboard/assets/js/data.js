@@ -76,3 +76,24 @@ $.ajax({
     
     }
 });
+
+// trending data
+$.ajax({
+    type: "GET"
+    , url: 'http://touradvisorzone.com/touradvisorphp/trending.php'
+    , dataType: "json", // serializes the form's elements.
+    success: function (data) {
+        console.log(data); // show response from the php script.
+
+        var text = '';
+            for (var i=0; i<data.trending.length;i++){
+                text +=
+                    '<li><a href=#>' + data.trending[i].site_name + '</a></li>';
+                        
+                // end of the function
+
+            }
+            $( '#trending' ).html( text );
+    
+    }
+});
