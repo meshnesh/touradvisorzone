@@ -1,0 +1,6 @@
+(1,'Nairobi National Park','39','578',19),
+(2,'Amboseli National Park','1','1',2),
+(3,'Hells Gate National Park','1','0',21),
+(4,'Kisite Mpunguti Marine Park','1','0',34),
+(5,'Meru National Park','14','9',11),
+(6,'Tsavo East National Park','1','0',18),
