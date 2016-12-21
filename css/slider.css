@@ -1,7 +1,7 @@
 body{
-    background-image: linear-gradient( rgba(255, 153, 0, 0.2), rgba(255, 153, 0, 0.2)), url(../img/websiteimages/mountain.jpg);
-    background-image: -moz-linear-gradient(rgba(255, 153, 0, 0.2), rgba(255, 153, 0, 0.2)), url(../img/websiteimages/mountain.jpg);
-    background-image: -o-linear-gradient(rgba(255, 153, 0, 0.2), rgba(255, 153, 0, 0.2)), url(../img/websiteimages/mountain.jpg);
+    background-image: linear-gradient( rgba(255, 153, 0, 0.2), rgba(255, 153, 0, 0.2)), url(../img/webimages/mountain.jpg);
+    background-image: -moz-linear-gradient(rgba(255, 153, 0, 0.2), rgba(255, 153, 0, 0.2)), url(../img/webimages/mountain.jpg);
+    background-image: -o-linear-gradient(rgba(255, 153, 0, 0.2), rgba(255, 153, 0, 0.2)), url(../img/webimages/mountain.jpg);
 }
 .park{
     margin-top: 12%;
@@ -19,4 +19,8 @@ body{
 }
 img{
     border-radius: 8px;
+    padding-bottom: 2%;
+}
+.banana{
+    padding-top: 12%;
 }
