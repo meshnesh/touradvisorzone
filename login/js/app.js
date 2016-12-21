@@ -14,32 +14,33 @@ function checkPass() {
 
 
 
-        // $('form').on('submit', function (event) {
-        //     event.preventDefault();
-        //     var form = $(this);
-        //     $.ajax('http://symatechlabs.com/bima/api/userRegistration.php', {
-        //         type: 'POST'
-        //         , data: form.serialize()
-        //         , dataType: 'json', beforeSend: function () {
-        //             $('.loader').show();
-        //         }
-        //         , complete: function () {
-        //             $('.loader').hide();
-        //         }, success: function (result) {
-        //             console.log(result);
+        $('form').on('submit', function (event) {
+            event.preventDefault();
+            var form = $(this);
+            $.ajax('http://touradvisorzone.com/touradvisorphp/register.php', {
+                type: 'POST'
+                , data: form.serialize()
+                , dataType: 'json', beforeSend: function () {
+                    $('.loader').show();
+                }
+                , complete: function () {
+                    $('.loader').hide();
+                }, success: function (result) {
+                    console.log(result);
+                    console.log("banana")
 
-        //             if (result == "SUCCESS") {
-        //                 window.location.href = '../profile%20page/index.html';
-        //             } else {
-        //                 // alert('EMAIL ALREADY EXISTS');
-        //                 email.style.backgroundColor = badColor;
-        //                 message2.style.color = badColor;
-        //                 message2.innerHTML = "EMAIL ALREADY EXISTS!";
-        //             }
+                    if (result == "SUCCESS") {
+                        window.location.href = '../dashboard/dashboard.html';
+                    } else {
+                        // alert('EMAIL ALREADY EXISTS');
+                        email.style.backgroundColor = badColor;
+                        message2.style.color = badColor;
+                        message2.innerHTML = "EMAIL ALREADY EXISTS!";
+                    }
 
-        //         }
-        //     });
-        // });
+                }
+            });
+        });
 
         pass2.style.backgroundColor = goodColor;
         message.style.color = goodColor;
@@ -58,40 +59,40 @@ function checkPass() {
 
 
 
-        // $('form').on('submit', function (event) {
-        //     event.preventDefault();
-        //     var form = $(this);
-        //     $("#btnGetResponse").click(function () {
-        //             $.ajax({
-        //             type: "POST"
-        //             , url: 'http://symatechlabs.com/bima/api/userLogin.php'
-        //             , data: form.serialize()
-        //             , dataType: "json"
-        //             , beforeSend: function () {
-        //                 $('.loader').show();
-        //             }
-        //             , complete: function () {
-        //                 $('.loader').hide();
-        //             },
+        $('form').on('submit', function (event) {
+            event.preventDefault();
+            var form = $(this);
+            $("#btnGetResponse").click(function () {
+                    $.ajax({
+                    type: "POST"
+                    , url: 'http://touradvisorzone.com/touradvisorphp/login.php'
+                    , data: form.serialize()
+                    , dataType: "json"
+                    , beforeSend: function () {
+                        $('.loader').show();
+                    }
+                    , complete: function () {
+                        $('.loader').hide();
+                    },
 
-        //             success: function (d) {
-
-
-
-        //                 if (d.userLogin[0].result == "SUCCESS") {
-        //                     console.log(d);
-        //                     window.location.href = '../profile%20page/index.html';
-        //                 } else {
-        //                     // alert('Wrong credentials');
+                    success: function (d) {
 
 
-        //                     document.getElementById('confirmMessage3').innerHTML = "EMAIL AND PASSWORD DO NOT MATCH!"
-        //                 }
-        //             }
 
-        //         });
+                        if (d.userLogin[0].result == "SUCCESS") {
+                            console.log(d);
+                            window.location.href = '../dashboard/dashboard.html';
+                        } else {
+                            // alert('Wrong credentials');
 
 
-        //     });
-        // });
+                            document.getElementById('confirmMessage3').innerHTML = "EMAIL AND PASSWORD DO NOT MATCH!"
+                        }
+                    }
+
+                });
+
+
+            });
+        });
 
