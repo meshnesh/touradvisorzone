@@ -138,7 +138,7 @@ $.ajax({
         var text = '';
             for (var i=0; i<data.trending.length;i++){
                 text +=
-                    '<li><a href=#>' + data.trending[i].site_name + '</a></li>';
+                    '<li><a href="../tweets.html">' + data.trending[i].site_name + '</a></li>';
                         
                 // end of the function
 
