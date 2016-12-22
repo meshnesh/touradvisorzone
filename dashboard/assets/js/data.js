@@ -50,7 +50,57 @@ $.ajax({
     
     }
 });
+// dashboard attraction
+$.ajax({
+    type: "GET"
+    , url: 'http://touradvisorzone.com/touradvisorphp/all_attractions.php'
+    , dataType: "json", // serializes the form's elements.
+    success: function (data) {
+        console.log(data); // show response from the php script.
 
+
+        var text = '';
+        var x = data.attractions.length;
+            for (var x=0; x<=8;x++){
+                text += '<tr>' +
+                            '<td>' + data.attractions[x].site_name + '</td>' +
+                            '<td>' + '<button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs"> <i class="fa fa-edit"></i> </button>'+ 
+                            '<button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs"> <i class="fa fa-times"></i> </button>'+
+                            '</td>' +
+                        '</tr>';
+                // end of the function
+
+            }
+            $( '#acttraction' ).html( text );
+    
+    }
+});
+
+// dashboard animal list
+$.ajax({
+    type: "GET"
+    , url: 'http://touradvisorzone.com/touradvisorphp/all_site_attractions.php'
+    , dataType: "json", // serializes the form's elements.
+    success: function (data) {
+        console.log(data); // show response from the php script.
+
+
+        var text = '';
+        var x = data.siteattractions.length;
+            for (var x=0; x<=7;x++){
+                text += '<tr>' +
+                            '<td>' + data.siteattractions[x].attraction_name + '</td>' +
+                            '<td>' + '<button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs"> <i class="fa fa-edit"></i> </button>'+ 
+                            '<button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs"> <i class="fa fa-times"></i> </button>'+
+                            '</td>' +
+                        '</tr>';
+                // end of the function
+
+            }
+            $( '#animalia' ).html( text );
+    
+    }
+});
 
 // accomodation.html list
 $.ajax({
