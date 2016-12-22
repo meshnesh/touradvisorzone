@@ -24,17 +24,15 @@ $.ajax({
 
 
 
-
-            function findIndexByKeyValue(obj, key, value)
-{
-    for (var i = 0; i < data.accommodations.length; i++) {
-        if (obj[i][key] == value) {
-            return i;
-            alert(i)
+            function findIndexByKeyValue(obj, key, value){
+                for (var i = 0; i < data.accommodations.length; i++) {
+                    if (accommodations[i][key] == value){
+                        return i;
+                        alert(i);
+                        console.log("Con")
+                    }
+                    return null;
+                }
+            }
         }
-        return null;
-}
-}
-    }
-    
-});
+    });
